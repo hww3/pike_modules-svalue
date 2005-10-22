@@ -1,0 +1,45 @@
+/*! @module Public
+ */
+
+/*! @module Sample
+ */
+
+#define _GNU_SOURCE
+
+#include "sample_config.h"
+#include "util.h"
+
+
+/*! @class Sample
+ */
+
+PIKEFUN int subtype(mixed m)
+{
+  push_int(m->subtype);
+}
+
+PIKEFUN int type(mixed m)
+{
+  push_int(m->type);
+}
+
+INIT
+{
+}
+
+EXIT 
+{
+}
+
+}
+
+/*! @endclass
+ */
+
+/*! @endmodule
+ */
+
+/*! @endmodule
+ */
+
+
